@@ -9,6 +9,7 @@
 --------------------------------------------------------------------------------
 triangle(3, 4) -> (5, 12, 6)
 """
+from math import sqrt
 
 
 def triangle(side_1: int, side_2: int) -> tuple:
@@ -25,7 +26,10 @@ def triangle(side_1: int, side_2: int) -> tuple:
     :rtype: tuple
     """
 
-    return None
+    ploschad = (side_1 * side_2) / 2
+    gipotenuza = sqrt((side_1 ** 2) + (side_2 ** 2))
+    perimetr = side_1 + side_2 + gipotenuza
+    return int(gipotenuza), int(perimetr), int(ploschad)
 
 
 if __name__ == '__main__':

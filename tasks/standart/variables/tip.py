@@ -22,7 +22,7 @@ def tip(bill: str) -> tuple:
     :rtype: tuple
     """
 
-    return None
+    return int(bill) * 0.15, int(bill) * 0.03
 
 
 if __name__ == '__main__':
