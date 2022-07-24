@@ -15,7 +15,6 @@
 - 'hello' -> ('hel', 'lo')
 - 'some' -> ('so', 'me')
 """
-from math import floor
 
 
 def split_to_parts(str_to_split: str) -> tuple:
@@ -26,8 +25,9 @@ def split_to_parts(str_to_split: str) -> tuple:
 
     :return: кортеж с двумя частями
     """
-
-    return None
+    first = str_to_split[:(len(str_to_split) + 1) // 2]
+    second = str_to_split[(len(str_to_split) + 1) // 2:]
+    return first, second
 
 
 if __name__ == '__main__':
